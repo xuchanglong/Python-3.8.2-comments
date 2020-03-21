@@ -9,3 +9,8 @@
 _testembed
 *.log
 python
+_sysconfigdata__linux_x86_64-linux-gnu.py
+2to3-3.8
+idle3.8
+pydoc3.8
+pybuilddir.txt
