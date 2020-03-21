@@ -14,3 +14,17 @@ _sysconfigdata__linux_x86_64-linux-gnu.py
 idle3.8
 pydoc3.8
 pybuilddir.txt
+Makefile
+Makefile.pre
+Misc/python-config.sh
+Misc/python-embed.pc
+Misc/python.pc
+Modules/Setup.local
+Modules/config.c
+Modules/ld_so_aix
+config.status
+profile-run-stamp
+pyconfig.h
+python-config
+python-config.py
+python-gdb.py
