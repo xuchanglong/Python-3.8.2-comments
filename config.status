@@ -433,7 +433,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/xcl/文档/codelib/lan/Python-3.8.2'
+ac_pwd='/home/xcl/文档/codelib/lan/Python-3.8.2-comments'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -746,10 +746,10 @@ S["build_os"]="linux-gnu"
 S["build_vendor"]="pc"
 S["build_cpu"]="x86_64"
 S["build"]="x86_64-pc-linux-gnu"
-S["HAS_GIT"]="no-repository"
-S["GITBRANCH"]=""
-S["GITTAG"]=""
-S["GITVERSION"]=""
+S["HAS_GIT"]="found"
+S["GITBRANCH"]="git --git-dir $(srcdir)/.git name-rev --name-only HEAD"
+S["GITTAG"]="git --git-dir $(srcdir)/.git describe --all --always --dirty"
+S["GITVERSION"]="git --git-dir $(srcdir)/.git rev-parse --short HEAD"
 S["BASECPPFLAGS"]=""
 S["target_alias"]=""
 S["host_alias"]=""

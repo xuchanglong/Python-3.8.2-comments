@@ -70,7 +70,7 @@ if test ! -n "$*"; then
 fi
 
 makexp=`dirname $0`/makexp_aix
-test -x "${makexp}" || makexp="/home/xcl/文档/codelib/lan/Python-3.8.2/Modules/makexp_aix"
+test -x "${makexp}" || makexp="/home/xcl/文档/codelib/lan/Python-3.8.2-comments/Modules/makexp_aix"
 
 # Check for existence of compiler.
 CC=$1; shift

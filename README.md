@@ -11,7 +11,8 @@ Python-3.8.2-comments
 ### 零、前言
 　　Python 3.8.2 中文注释版。
 ### 一、使用说明
->c./configure、make、make install
+>   ./configure
+>   make
 ### 二、目录介绍
 （后面补充）
 ### 三、整体框架图

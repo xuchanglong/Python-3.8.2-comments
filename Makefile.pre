@@ -29,8 +29,8 @@ MODLIBS=           _MODLIBS_
 VERSION=	3.8
 srcdir=		.
 
-abs_srcdir=	/home/xcl/文档/codelib/lan/Python-3.8.2
-abs_builddir=	/home/xcl/文档/codelib/lan/Python-3.8.2
+abs_srcdir=	/home/xcl/文档/codelib/lan/Python-3.8.2-comments
+abs_builddir=	/home/xcl/文档/codelib/lan/Python-3.8.2-comments
 
 
 CC=		gcc -pthread
@@ -42,9 +42,9 @@ READELF=	readelf
 SOABI=		cpython-38-x86_64-linux-gnu
 LDVERSION=	$(VERSION)$(ABIFLAGS)
 LIBPYTHON=	
-GITVERSION=	
-GITTAG=		
-GITBRANCH=	
+GITVERSION=	git --git-dir $(srcdir)/.git rev-parse --short HEAD
+GITTAG=		git --git-dir $(srcdir)/.git describe --all --always --dirty
+GITBRANCH=	git --git-dir $(srcdir)/.git name-rev --name-only HEAD
 PGO_PROF_GEN_FLAG=-fprofile-generate
 PGO_PROF_USE_FLAG=-fprofile-use -fprofile-correction
 LLVM_PROF_MERGER=true
