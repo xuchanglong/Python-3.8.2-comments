@@ -6,3 +6,6 @@
 .vscode
 *.json
 *.filters
+_testembed
+*.log
+python

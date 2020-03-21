@@ -102,7 +102,12 @@ whose size is determined when the object is allocated.
     typedef struct _object
     {
         _PyObject_HEAD_EXTRA
-            Py_ssize_t ob_refcnt;  // 对象的引用计数。
+        // 表示引用计数。
+        // 当有一个新的 PyObject * 引用该对象时候，则进行 +1 操作，
+        // 当这个 PyObject * 被删除时，该引用计数就会减小。
+        // 当计数为0时，该对象就会被回收，等待内存被释放。
+            Py_ssize_t ob_refcnt; 
+        // 记录对象的类型信息
         struct _typeobject *ob_type;
     } PyObject;
 
